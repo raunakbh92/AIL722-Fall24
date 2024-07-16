@@ -13,7 +13,7 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #5e0202;
+            background-color: #c93b3b;
             color: white;
             padding: 0.2em 0;
             text-align: center;
@@ -25,7 +25,7 @@
             height: 80px;
         }
         nav {
-            background-color: #032148;
+            background-color: black;
             color: white;
             padding: 1em;
             text-align: center;
@@ -58,6 +58,18 @@
         h2 {
             color: #333;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }        
         /* footer {
             background-color: #560404;
             color: white;
@@ -75,7 +87,7 @@
         <h1>AIL 722: Reinforcement Learning (Fall 2024)</h1>
         <img src="iit-delhi-logo-white.png" alt="IIT Delhi Logo">
     </header>
-    <nav>
+    <!-- <nav>
         <a href="#description">Description</a>
         <a href="#instructor">Instructor</a>
         <a href="#schedule">Schedule</a>
@@ -85,28 +97,70 @@
         <a href="#outline">Outline</a>
         <a href="#assignments">Assignments</a>
         <a href="#resources">Resources</a>
-    </nav>
+    </nav> -->
     <div class="container">
         <main>
             <section id="description">
-                <h2>Course Description</h2>
-                <p>Introduction to Reinforcement Learning.</p>
+                <h2>Course Description and Objectives</h2>
+                <p>
+                    Sequential decision making under uncertainty is a key challenge for AI systems. 
+                    Reinforcement Learning is a paradigm where an agent learns to make decisions by interacting with an environment. 
+                    The agent takes actions in various states of the environment and receives rewards based on the outcomes of these actions.
+                    This approach has been used in diverse areas such as autonomous systems, game playing, robotics, and heathcare.
+                    This course will cover the basics of reinforcement learning as well as deep reinforcement learning
+                    — an exciting new area that combines deep learning techniques with reinforcement learning.
+                </p>
+                
+                <p>The course objectives are:</p>
+                <ol>
+                    <li>The course intends to familiarise students with the key features of reinforcement learning</li>
+                    <li>Students will learn about fundamental RL algorithms and implement them in code</li>
+                    <li>Given an application problem, students should be able to decide whether it should be formulated as an RL problem. 
+                        If yes, they should be able to formulate the problem, decide which algorithm to use, and implement the algorithm.
+                    </li>
+                  </ol>
             </section>
             <section id="instructor">
                 <h2>Instructor Information</h2>
-                <p><strong>Name:</strong> Raunak Bhattacharyya</p>
+                <p>Raunak Bhattacharyya, Assistant Professor, Yardi School of Artificial Intelligence</p>
                 <!-- <p><strong>Contact:</strong> john.doe@example.com</p> -->
                 <!-- <p><strong>Office Hours:</strong> Mondays 2-4pm</p> -->
             </section>
-            <section id="schedule">
-                <h2>Course Schedule</h2>
-                <p>Class times and locations will be listed here.</p>
+            <section id="contents">
+                <h2>Course Contents</h2>
+                <p>Below is a tentative list of topics. Further details as well as exact scheduling will be updated here.</p>
+                <ol>
+                    <li>Markov Decision Processes</li>
+                    <li>Policy gradients</li>
+                    <li>Actor critic methods </li>
+                    <li>Value function based approaches</li>
+                    <li>Exploration</li>
+                    <li>Model-based RL</li>
+                    <li>Inverse RL</li>
+                    <li>Offline RL</li>
+                </ol>                
+                <!-- <h2>Sample Table</h2>
+
+                    <table>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 4</td>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                    </tr>
+                    </table> -->
             </section>
-            <section id="objectives">
-                <h2>Course Objectives</h2>
-                <p>Details about what students will learn in the course.</p>
-            </section>
-            <section id="materials">
+
+            <!-- <section id="materials">
                 <h2>Required Texts/Materials</h2>
                 <p>List of required books and materials.</p>
             </section>
@@ -125,14 +179,14 @@
             <section id="resources">
                 <h2>Additional Resources</h2>
                 <p>Recommended reading and online resources.</p>
-            </section>
+            </section> -->
         </main>
         <aside>
             <h2>Announcements</h2>
-            <p>This is a placeholder for announcements.</p>
-            <p><strong>Update 1:</strong> Class on Monday is moved to Room 204.</p>
+            <p>Timing and venue for the first class will be announced here.</p>
+            <!-- <p><strong>Update 1:</strong> Class on Monday is moved to Room 204.</p>
             <p><strong>Update 2:</strong> Assignment 1 is due next Friday.</p>
-            <p><strong>Update 3:</strong> Midterm exam schedule will be posted soon.</p>
+            <p><strong>Update 3:</strong> Midterm exam schedule will be posted soon.</p> -->
         </aside>
     <div>
     <!-- <footer>
