@@ -4,46 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIL 722</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            /* font-family: 'Comic Sans MS', cursive, sans-serif; */
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            /* margin-right: 20em; */
-        header {
-            background-color: #c93b3b;
-            color: white;
-            /* padding: 0.2em 0; */
-            text-align: center;
-            width: 100%;
-            /* position: left; */
-        }
-        main {
-            /* display: flex; */
-            /* flex-wrap: wrap; */
-            padding: 2em;
-            margin-right: 20%;
-            /* margin-left: 10%; */
-            /* text-align: justify;  */
-        }
-        section {
-            margin-bottom: 2em;
-        }
-        h2 {
-            color: #333;
-        }
-             /* Responsive adjustments */
-        /* @media (min-width: 768px) {
-            .container {
-                flex-direction: row; 
-            }
-        } */
-    }
-    </style>
+    <link rel="stylesheet" href="CourseWebpage_stylefile.css">
 </head>
 <body>
     <header>
@@ -61,73 +22,307 @@
         <a href="#assignments">Assignments</a>
         <a href="#resources">Resources</a>
     </nav> -->
-    <div class="container">
         <main>
             <section id="description">
                 <h2>Course Description and Objectives</h2>
-                <p>
-                    Sequential decision making under uncertainty is a key challenge for AI systems. 
-                    Reinforcement Learning is a paradigm where an agent learns to make decisions by interacting with an environment. 
-                    The agent takes actions in various states of the environment and receives rewards based on the outcomes of these actions.
-                    This approach has been used in diverse areas such as autonomous systems, game playing, robotics, and heathcare.
-                    This course will cover the basics of reinforcement learning as well as deep reinforcement learning
-                    — an exciting new area that combines deep learning techniques with reinforcement learning.
-                </p>
+                <div class="indented">
+                    <p>
+                        Sequential decision making under uncertainty is a key challenge for AI systems. 
+                        Reinforcement Learning is a paradigm where an agent learns to make decisions by interacting with an environment. 
+                        The agent takes actions in various states of the environment and receives rewards based on the outcomes of these actions.
+                        This approach has been used in diverse areas such as autonomous systems, game playing, robotics, and heathcare.
+                        This course will cover the basics of reinforcement learning as well as deep reinforcement learning
+                        — an exciting new area that combines deep learning techniques with reinforcement learning.
+                    </p>
+                    
+                    <p>The course objectives are:</p>
+                    <ol>
+                        <li>The course intends to familiarise students with the key features of reinforcement learning</li>
+                        <li>Students will learn about fundamental RL algorithms and implement them in code</li>
+                        <li>Given an application problem, students should be able to decide whether it should be formulated as an RL problem. 
+                            If yes, they should be able to formulate the problem, decide which algorithm to use, and implement the algorithm.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+
+            <section id="logistics">
+                <h2>Logistics</h2>
+                    <h3>Time/Location:</h3>
+                    <div class="indented">
+                        <ul>
+                            <li> Slot: D</li>
+                            <li> Class Timings: Tue/Wed/Fri 9-10 am</li>
+                            <li> Venue: Bharti IIA Room 305</li>
+                        </ul>
+                    </div>
                 
-                <p>The course objectives are:</p>
-                <ol>
-                    <li>The course intends to familiarise students with the key features of reinforcement learning</li>
-                    <li>Students will learn about fundamental RL algorithms and implement them in code</li>
-                    <li>Given an application problem, students should be able to decide whether it should be formulated as an RL problem. 
-                        If yes, they should be able to formulate the problem, decide which algorithm to use, and implement the algorithm.
-                    </li>
-                  </ol>
+
+                    <!-- <h3>Communication:</h3>
+                    <div class="indented">
+                        <p>We will use piazza as the forum for students to ask questions about both
+                            the course material as well as logistics. 
+                            <br>Joining link will be shared soon.
+                        </p>
+                    </div> -->
+                    
+
+                    <h3>Teaching Team:</h3>
+                    <div class="indented">
+                        <ul>
+                            <li> Instructor: Raunak Bhattacharyya, Assistant Professor, Yardi School of Artificial Intelligence</li>
+                            <li> Teaching assistants: TBA
+                        </ul>
+                    </div>
             </section>
-            <section id="instructor">
-                <h2>Instructor Information</h2>
-                <p>Raunak Bhattacharyya, Assistant Professor, Yardi School of Artificial Intelligence</p>
-                <!-- <p><strong>Contact:</strong> john.doe@example.com</p> -->
-                <!-- <p><strong>Office Hours:</strong> Mondays 2-4pm</p> -->
-            </section>
+
             <section id="contents">
                 <h2>Course Contents</h2>
-                <p>Below is a tentative list of topics. Further details as well as exact scheduling will be updated here.</p>
-                <ol>
-                    <li>Markov Decision Processes</li>
-                    <li>Policy gradients</li>
-                    <li>Actor critic methods </li>
-                    <li>Value function based approaches</li>
-                    <li>Exploration</li>
-                    <li>Model-based RL</li>
-                    <li>Inverse RL</li>
-                    <li>Offline RL</li>
-                </ol>                
-                <!-- <h2>Sample Table</h2>
-
-                    <table>
-                    <tr>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
-                        <th>Column 3</th>
-                    </tr>
-                    <tr>
-                        <td>Data 1</td>
-                        <td>Data 2</td>
-                        <td>Data 3</td>
-                    </tr>
-                    <tr>
-                        <td>Data 4</td>
-                        <td>Data 5</td>
-                        <td>Data 6</td>
-                    </tr>
-                    </table> -->
+                <div class="indented">
+                    <p>Below is a tentative list of topics:</p>
+                    <ol>
+                        <li>Markov Decision Processes</li>
+                        <li>Policy gradients</li>
+                        <li>Actor critic methods </li>
+                        <li>Value function based approaches</li>
+                        <li>Exploration</li>
+                        <li>Model-based RL</li>
+                        <li>Inverse RL</li>
+                        <li>Offline RL</li>
+                    </ol>
+                </div>
             </section>
+
             <section id="announcements">
                 <h2>Announcements</h2>
-                <p>Timing and venue for the class will be announced here.
-                <!-- <p><strong>Contact:</strong> john.doe@example.com</p> -->
-                <!-- <p><strong>Office Hours:</strong> Mondays 2-4pm</p> -->
-            </section>            
+                <div class="indented">
+                    <p>Please watch this space for announcements
+                </div>
+            </section>
+            
+            
+            <section id="schedule">
+                <h2>Schedule</h2>
+                    <div class="indented">
+                        <p>
+                        The weekly schedule including links to slides, additional material and assignments will be updated in the calendar
+                        below.
+                        </p>
+
+                    </div>
+
+            </section>
+            
+                <div class="course_schedule">
+                    <table class="table">
+        
+                        <!-- Schedule Headers -->
+                        <tbody>
+                            <tr class="highlightOnHover">
+                                <th></th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+        
+                        <!-- Week 1 -->
+                            <tr class="border-bottom">
+                                <td>Week 1</td>
+                                <td>July 22</td>
+                                <td>July 23</td>
+                                <td>July 24</td>
+                                <td>July 25</td>
+                                <td>July 26</td>
+                                <td>July 27</td>
+                                <td>July 28</td>
+                            </tr>
+
+                            <tr class="highlightOnHover">
+                                <td>
+                                    Introduction
+                                    <br>
+                                    <!-- <a href="assignments/foundations/index.html">[Foundations]</a> -->
+                                </td>
+                                <td>
+                                    <!-- Mon -->
+                                </td>
+                                <td>
+                                    <!-- Tue -->
+                                    Lecture:
+                                    <!-- <br>
+                                    Introduction -->
+                                    <!-- <br> -->
+                                    <span class="pseudolink">9-10am</span>
+                                    <br>
+                                </td>
+                                <td>
+                                    <!-- Wed -->
+                                    Lecture:
+                                    <!-- <br>
+                                    HMM 1 -->
+                                    <!-- <br> -->
+                                    <span class="pseudolink">9-10am</span>
+                                    <br>
+                                </td>
+                                <td>
+                                    <!-- Thu -->
+                                </td>
+                                <td>
+                                    <!-- Fri -->
+                                    Lecture:
+                                    <!-- <br>
+                                    HMM 2 -->
+                                    <!-- <br> -->
+                                    <span class="pseudolink">9-10am</span>
+                                    <!-- <br> -->
+                                    <!-- <p>
+                                        <a href="/spring2023-extra/problem-sessions/ps1.pdf">[Solutions]</a><br>
+                                        <a href="https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=da01db09-981f-4903-9521-afdc012b6db5">[Video]</a>
+                                    </p> -->
+                                </td>
+                                <td>
+                                    <!-- Sat -->
+                                </td>
+                                <td>
+                                    <!-- Sun -->
+                                </td>
+                            </tr>
+        
+        
+                        <!-- Week 2 -->
+                            <tr>
+                                <td>Week 2</td>
+                                <td>July 29</td>
+                                <td>July 30</td>
+                                <td>July 31</td>
+                                <td>Aug 1</td>
+                                <td>Aug 2</td>
+                                <td>Aug 3</td>
+                                <td>Aug 4</td>
+                            </tr>
+                            <tr class="highlightOnHover">
+                                <td>
+                                    <!-- Policy Gradients
+                                    <br> -->
+                                    <!-- <a href="assignments/foundations/index.html">[Foundations]</a> -->
+                                </td>
+                                <td>
+                                    <!-- Mon -->
+                                </td>
+                                <td>
+                                    <!-- Tue -->
+                                    <!-- Lecture:
+                                    <br>
+                                    Intro to MDPs
+                                    <br>
+                                    <span class="pseudolink">10:30am-11:50am</span>
+                                    <br> -->
+                                </td>
+                                <td>
+                                    <!-- Wed -->
+                                    <!-- Lecture:
+                                    <br>
+                                    Policy Gradient
+                                    <br>
+                                    <span class="pseudolink">10:30am-11:50am</span> -->
+                                    <br>
+                                </td>
+                                <td>
+                                    <!-- Thu -->
+                                </td>
+                                <td>
+                                    <!-- Fri -->
+                                    <!-- Lecture:
+                                    <br>
+                                    Reinforce
+                                    <br>
+                                    <span class="pseudolink">10:30am-11:50am</span>
+                                    <br>
+                                    <p>
+                                        <a href="/spring2023-extra/problem-sessions/ps1.pdf">[Solutions]</a><br>
+                                        <a href="https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=da01db09-981f-4903-9521-afdc012b6db5">[Video]</a>
+                                    </p> -->
+                                </td>
+                                <td>
+                                    <!-- Sat -->
+                                </td>
+                                <td>
+                                    <!-- Sun -->
+                                </td>
+                            </tr>
+
+                        <!-- Week 3 -->
+                        <tr>
+                            <td>Week 3</td>
+                            <td>Aug 5</td>
+                            <td>Aug 6</td>
+                            <td>Aug 7</td>
+                            <td>Aug 8</td>
+                            <td>Aug 9</td>
+                            <td>Aug 10</td>
+                            <td>Aug 11</td>
+                        </tr>
+                        <tr class="highlightOnHover">
+                            <td>
+                                <!-- Actor-Critic
+                                <br> -->
+                                <!-- <a href="assignments/foundations/index.html">[Foundations]</a> -->
+                            </td>
+                            <td>
+                                <!-- Mon -->
+                            </td>
+                            <td>
+                                <!-- Tue -->
+                                <!-- Lecture:
+                                <br>
+                                Variance Reduction
+                                <br>
+                                <span class="pseudolink">10:30am-11:50am</span>
+                                <br> -->
+                            </td>
+                            <td>
+                                <!-- Wed -->
+                                <!-- Lecture:
+                                <br>
+                                Baselines
+                                <br>
+                                <span class="pseudolink">10:30am-11:50am</span>
+                                <br> -->
+                            </td>
+                            <td>
+                                <!-- Thu -->
+                            </td>
+                            <td>
+                                <!-- Fri -->
+                                <!-- Lecture:
+                                <br>
+                                Actor-Critic
+                                <br>
+                                <span class="pseudolink">10:30am-11:50am</span>
+                                <br>
+                                <p>
+                                    <a href="/spring2023-extra/problem-sessions/ps1.pdf">[Solutions]</a><br>
+                                    <a href="https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=da01db09-981f-4903-9521-afdc012b6db5">[Video]</a>
+                                </p> -->
+                            </td>
+                            <td>
+                                <!-- Sat -->
+                            </td>
+                            <td>
+                                <!-- Sun -->
+                            </td>
+                        </tr>                            
+        
+                        </tbody>
+                    </table>
+                </div>
+                <!-- </div> -->
+            
 
 
             <!-- <section id="materials">
@@ -151,16 +346,6 @@
                 <p>Recommended reading and online resources.</p>
             </section> -->
         </main>
-        <!-- <aside>
-            <h2>Announcements</h2>
-            <p>Timing and venue for the first class will be announced here.</p>
-            <p><strong>Update 1:</strong> Class on Monday is moved to Room 204.</p>
-            <p><strong>Update 2:</strong> Assignment 1 is due next Friday.</p>
-            <p><strong>Update 3:</strong> Midterm exam schedule will be posted soon.</p>
-        </aside> -->
-    <div>
-    <!-- <footer>
-        <p>&copy; 2024 Raunak Bhattacharyya</p>
-    </footer> -->
+
 </body>
 </html>
