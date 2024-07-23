@@ -15,6 +15,18 @@ header {
     width: 100%;
     /* position: left; */
 }
+nav {
+    background-color: rgb(251, 224, 184);
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+nav a {
+    color: black;
+    margin: 0 1em;
+    text-decoration: none;
+    font-size: large;
+}
 h3{
     margin-left: 4%;
 }
