@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     /* margin-right: 20em; */
 header {
-    background-color: #c93b3b;
+    background-color: #c21717 /*#c93b3b*/;
     color: white;
     /* padding: 0.2em 0; */
     text-align: center;
@@ -30,7 +30,7 @@ footer {
     height: 90%;
 }
 nav {
-    background-color: rgb(251, 224, 184);
+    background-color: #f4f1bb /*#c4e7d4*/ /*rgb(251, 224, 184)*/;
     color: white;
     padding: 1em;
     text-align: center;
